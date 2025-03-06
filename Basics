@@ -1,0 +1,74 @@
+#Python is a high-level, interpreted, interactive and object-oriented scripting language.
+#basic code for python
+print("Hello World") #print Hello World
+
+#variables
+#A variable is a container for storing data values. 
+#variables are case-sensitive
+area=100 #integer variable
+name="John" #string variable
+height=5.6 #float variable
+isStudent=True #boolean variable
+print(area) #print the value of the variable area
+print(name) #print the value of the variable name
+print(height) #print the value of the variable height
+print(isStudent) #print the value of the variable isStudent
+
+#basic code for input and output
+message=input() #ask the user for input
+print(message)  #print the value of the variable message
+#ask the user for age
+age=input()
+#print the value of the variable age
+print(age)
+
+#check the type of the variable
+balance = 78000
+type(balance)
+
+#convert the input to integer
+age=int(age)
+print(age)
+#print the value of the variable age
+type(age)   #int    #check the type of the variable age
+
+#convert the input to float
+age=float(age)       #convert the input to float  
+print(age)           #print the value of the variable age
+type(age)            #float    #check the type of the variable age
+
+#convert the input to string
+age=str(age)         #convert the input to string  
+print(age)           #print the value of the variable age
+type(age)            #str    #check the type of the variable age
+#input() always gives string data types.
+
+#the Boolean data type has one of two possible values: True or False
+#a comparison operation always results in a Boolean value
+#comparison operators
+age=18
+#check if age is greater than 18    
+print(age>18)  #True
+#check if age is less than 18
+print(age<18)  #False
+#check if age is equal to 18
+print(age==18)  #True     
+#check if age is not equal to 18
+print(age!=18)  #False
+#check if age is greater than or equal to 18
+print(age>=18)  #True  
+#check if age is less than or equal to 18
+print(age<=18)  #True
+
+#logical operators
+print(True and True)  #True
+print(True and False)  #False
+
+#Combining Comparison and logical operators
+age=70
+#check if age is greater than 18 and less than 65
+print(age>18 and age<65)  #False
+#check if age is greater than 18 or less than 65    
+print(age>18 or age<65)  #True
+#check if age is not equal to 18
+print(not age==18) #True 
