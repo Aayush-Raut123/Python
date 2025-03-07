@@ -1,0 +1,96 @@
+#control flow
+#using 3 techniques: sequencing, iteration and selection.
+#make sure on indentation, python uses indentation to define code blocks.
+#use the colon (:) to define the start of a code block.
+
+#sequencing
+#computer runs your code in order, from top to bottom.
+print("3")
+print("building")
+print("blocks")
+#output: 3
+#building   
+#blocks
+
+#iteration
+#repeating a block of code multiple times as a loop.
+#Iteration makes your programs simpler, faster and reduces errors.
+#There are two types of loops: for loop and while loop.
+
+#using for loop
+#A for loop is used to execute the same instruction over and over again, a specific number of times.
+for i in range(3):
+    print(i)
+#output: 0
+#1
+#2
+for i in range(3):
+  print("A")   #print A 3 times     
+print("B")     #print B once due to indentation
+
+#using while loop
+#A while loop is used to execute the same instruction over and over again, as long as a condition is true.
+# they can be used even when you don’t know how many iterations will be needed.
+i=0   
+while i<3:
+    print(i)
+    i+=1  #counter
+#output: 0
+#1
+#2
+
+#using break statement
+i=0
+while i<3:
+    print(i)
+    if i==1:
+        break
+    i+=1
+#output: 0
+#1
+
+counter = 0
+while counter < 4:
+  print(counter)
+  #an infinite loop
+
+#using continue statement
+i=0
+while i<3:
+    i+=1
+    if i==1:
+        continue
+    print(i)        
+#output: 2
+#3
+
+
+#selection
+#Selection specifies when to follow each path.
+#Selection is done using if, elif and else statements.
+#The if statement is used to check a condition.
+#The elif statement is used to check multiple conditions.
+#The else statement is used to execute code when the condition is false.
+#using if statement
+age=18
+if age>18:
+    print("You are an adult")       
+#output: nothing is printed because the condition is false
+
+#using if and else statement
+age=18
+if age>18:
+    print("You are an adult")       
+else:
+    print("You are a minor")
+#output: You are a minor
+
+#using if, elif and else statement
+age=18
+if age>18:
+    print("You are an adult")
+elif age==18:
+    print("You are a teenager")
+else:
+    print("You are a minor")
+#output: You are a teenager
